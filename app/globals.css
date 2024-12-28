@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --border: 215 16% 47%;
+  }
+}
+
+@font-face {
+  font-family: 'STZhongsong';
+  src: url('/fonts/STZhongsong.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-stzhongsong {
+  font-family: 'STZhongsong', '华文中宋', 'SimSun', 'serif';
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'STZhongsong';
+  src: url('/fonts/STZhongsong.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.fonts-loaded .font-stzhongsong {
+  font-family: 'STZhongsong', '华文中宋', 'SimSun', 'serif';
+  font-weight: 300;
+}
+
+.fonts-failed .font-stzhongsong {
+  font-family: '华文中宋', 'SimSun', 'serif';
+  font-weight: 300;
+}
+
